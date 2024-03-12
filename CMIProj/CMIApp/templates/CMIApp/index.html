@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Processor</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        #video-feed {
+            width: 640px;
+            height: 480px;
+            border: 1px solid #000;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+            width: 640px;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <video id="video-feed" autoplay></video>
+    <div class="buttons">
+        <button id="red-button">Red</button>
+        <button id="blue-button">Blue</button>
+        <button id="green-button">Green</button>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var videoFeed = document.getElementById('video-feed');
+            videoFeed.src = '/myapp/video_feed/';
+
+            document.getElementById('red-button').addEventListener('click', function() {
+                // Handle red button click
+            });
+
+            document.getElementById('blue-button').addEventListener('click', function() {
+                // Handle blue button click
+            });
+
+            document.getElementById('green-button').addEventListener('click', function() {
+                // Handle green button click
+            });
+        });
+    </script>
+</body>
+</html>
