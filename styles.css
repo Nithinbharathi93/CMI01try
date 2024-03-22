@@ -76,6 +76,7 @@ body {
     #mains {
         display: grid;
         padding: 5px;
+        width: 80%;
     }
     #mains p {
         font-size: 12px;
