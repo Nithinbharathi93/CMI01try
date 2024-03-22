@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="alert alert-danger" role="alert" style="width: 100%;">
+        You can't access this page. Please contact the Company.
+        </div>
+    <div class="video-background">
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="./nyc-vid.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div id="mains">
+        <div id="Content">
+            <h2>Get Access Code</h2>
+            <p>Please get the access code from the Ad Agency to view their hoarding boards.<br><br>
+                We apologize for any inconvenience, but it seems that you do not currently have the necessary permissions to access the requested page. In order to obtain the access code and view our captivating hoarding boards, we kindly request you to fill out a short form.</p>
+        </div>
+        <div id="inp">
+            <form id="inps" action="POST">
+                <h2>Contact Us</h2>
+                <input type="text" name="uname" id="uname" placeholder=" Name" required>
+                <input type="text" name="uuname" id="uuname" placeholder=" Username" required>
+                <input type="email" name="umail" id="umail" placeholder=" Email" required>
+                <input type="password" name="upswd" id="upswd" placeholder=" Password" required>
+                <button type="submit"><span><strong>SUBMIT</strong></span></button>
+            </form>
+        </div>
+    </div>
+    <script src="./code.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- <p>2024 Allm Rights Reserved Techsnapie Solutions</p> -->
+</body>
+</html>
+
+
+    
